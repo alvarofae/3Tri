@@ -1,4 +1,4 @@
-.cabecalho__menu-hamburguer{
+.cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
@@ -7,7 +7,7 @@
     background-position: center;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -15,31 +15,37 @@
     position: relative;
 
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
 }
-.container__imagem{
+
+.container__imagem {
     padding: 1em;
 }
 
-.lista-menu{
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
     background-color: var(--branco);
-    width:60vw
+    width: 60vw
 }
-.container__botao{
+
+.container__botao {
     display: none;
 }
-.container__botao:checked~.lista-menu{
+
+.container__botao:checked~.lista-menu {
     display: block;
 }
-.lista-menu__titulo{
+
+.lista-menu__titulo {
     color: var(--amarelo);
 }
-.lista-menu__item{
+
+.lista-menu__item {
     background: var(--roxo-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,35 +53,52 @@
     text-transform: uppercase;
 
 }
-.lista-menu__titulo, .lista-menu__item{
-    padding:1em;
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
     background-color: var(--branco);
 }
 
-.titulo__cabecalho{
-    display:none
-}
-.logo{
-        width: 200px!important;
+.titulo__cabecalho {
+    display: none
 }
 
-@media screen and (min-width: 825px){
-    .titulo__cabecalho{
+.logo {
+    width: 200px !important;
+}
+
+@media screen and (min-width: 825px) {
+    .titulo__cabecalho {
         font-size: 38px;
         font-family: var(--font-sucundaria);
         color: green;
         display: block;
     }
 
-    .Imagem{
+    .Imagem {
         font-size: 45px;
         font-family: var(--font-sucundaria);
         display: block;
     }
-    .container{
+
+    .container {
         font-size: 45px;
         font-family: var(--font-sucundaria);
         display: flex;
 
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: black;
     }
 }
